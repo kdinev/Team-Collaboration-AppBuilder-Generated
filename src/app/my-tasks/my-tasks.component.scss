@@ -121,6 +121,13 @@
   width: 100%;
   position: relative;
 }
+.column-layout {
+  min-width: 320px;
+  min-height: 400px;
+  align-items: stretch;
+  padding: 12px;
+  justify-content: space-between;
+}
 .my-tasks {
   min-height: 900px;
   min-width: 1440px;
@@ -202,7 +209,7 @@
   width: 100%;
   position: relative;
 }
-.column-layout {
+.column-layout_1 {
   min-height: 212px;
   min-width: 642px;
   justify-content: space-between;
@@ -210,7 +217,7 @@
   width: 100%;
   position: relative;
 }
-.column-layout_1 {
+.column-layout_2 {
   min-height: 436px;
   min-width: 642px;
   justify-content: space-between;
@@ -229,69 +236,82 @@
 .title {
   width: 49px;
   min-width: 49px;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .subtitle {
   width: 73px;
   min-width: 73px;
   margin: 24px 0 0;
   color: rgba(0, 0, 0, 0.8657155797101449);
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .title_1 {
   width: 44px;
   min-width: 44px;
   margin: 32px 0 0;
   color: rgba(0, 0, 0, 0.8657155797101449);
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .title_2 {
   width: 65px;
   min-width: 65px;
   margin: 32px 0 0;
   color: rgba(0, 0, 0, 0.8657155797101449);
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .title_3 {
   width: 90px;
   min-width: 90px;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .subtitle_1 {
   width: 123px;
   min-width: 123px;
   color: rgba(0, 0, 0, 0.8657155797101449);
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .subtitle_2 {
   width: 233px;
   min-width: 233px;
   color: rgba(0, 0, 0, 0.8657155797101449);
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .calendar {
   width: 100%;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .title_4 {
   width: 150px;
   min-width: 150px;
-  height: max-content;
   position: relative;
+  height: max-content;
+}
+.link {
+  margin: 12px;
+  text-align: right;
+  min-width: min-content;
+  flex: 0 0 auto;
+  height: max-content;
 }
 .title_5 {
+  text-align: center;
+  min-width: min-content;
+  flex: 0 0 auto;
+  height: max-content;
+}
+.title_6 {
   width: 138px;
   min-width: 138px;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .avatar {
   position: relative;
@@ -299,45 +319,51 @@
 .button {
   width: 104px;
   min-width: min-content;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .buttonflatenabled {
   width: 80px;
   margin: 24px 0 0;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .button_1 {
   width: 88px;
   min-width: min-content;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .button_2 {
   width: 112px;
   min-width: min-content;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .button_3 {
   width: 100px;
   min-width: min-content;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .button_4 {
   width: 96px;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .button_5 {
   width: 12%;
-  height: max-content;
   position: relative;
+  height: max-content;
 }
 .buttonflatenabled_1 {
   margin: 24px 0 0;
+}
+.user-input {
+  margin: 12px;
+  flex: 0 0 auto;
+  min-width: min-content;
+  height: max-content;
 }
 .button_6 {
   min-width: min-content;
@@ -375,6 +401,11 @@
   width: 100%;
   position: relative;
   height: auto;
+}
+.dialog-window {
+  min-width: 0;
+  min-height: 0;
+  flex: 0 0 auto;
 }
 .row {
   display: flex;
