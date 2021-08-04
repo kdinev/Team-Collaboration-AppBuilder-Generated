@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
-import { IgxAvatarModule, IgxButtonModule, IgxIconModule, IgxNavigationDrawerModule, IgxListModule, IgxCalendarModule, IgxCardModule } from 'igniteui-angular';
+import { IgxAvatarModule, IgxButtonModule, IgxIconModule, IgxToggleModule, IgxNavigationDrawerModule, IgxListModule, IgxCalendarModule, IgxDialogModule, IgxInputGroupModule, IgxCardModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { DashboardsComponent } from './dashboards/dashboards.component';
 
@@ -23,9 +23,12 @@ import { DashboardsComponent } from './dashboards/dashboards.component';
     IgxAvatarModule,
     IgxButtonModule,
     IgxIconModule,
+    IgxToggleModule,
     IgxNavigationDrawerModule,
     IgxListModule,
     IgxCalendarModule,
+    IgxDialogModule,
+    IgxInputGroupModule,
     FormsModule,
     IgxCardModule
   ],

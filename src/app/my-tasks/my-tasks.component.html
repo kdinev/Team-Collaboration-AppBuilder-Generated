@@ -25,7 +25,7 @@
             <igx-icon font="material" [active]="true" class="icon">mode_comment</igx-icon>
           </div>
           <div class="row-layout row">
-            <igx-avatar [roundShape]="true" color="var(--igx-grays-800)" bgColor="var(--igx-grays-400)" initials="NA" size="small" class="avatar"></igx-avatar>
+            <igx-avatar [roundShape]="true" color="var(--igx-grays-800)" bgColor="var(--igx-grays-400)" initials="NA" size="small" [igxToggleAction]="dialogWindow" class="avatar"></igx-avatar>
           </div>
         </div>
       </div>
@@ -151,8 +151,8 @@
         <div class="group_8 row">
           <div class="group_1 column">
             <div class="group_3 row">
-              <div class="column-layout column">
-                <h6 class="title_5">Developer Tools</h6>
+              <div class="column-layout_1 column">
+                <h6 class="title_6">Developer Tools</h6>
                 <p class="igx-typography__subtitle-2 subtitle_1">Release 2020.2</p>
                 <igx-list class="list_1">
                   <igx-list-item>
@@ -175,8 +175,8 @@
               </div>
             </div>
             <div class="group_4 row">
-              <div class="column-layout_1 column">
-                <h6 class="title_5">App Builder</h6>
+              <div class="column-layout_2 column">
+                <h6 class="title_6">App Builder</h6>
                 <p class="igx-typography__subtitle-2 subtitle_2">September release - Sprint 1</p>
                 <igx-list class="list_1">
                   <igx-list-item>
@@ -242,6 +242,25 @@
             </igx-list>
           </div>
         </div>
+        <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialogWindow class="dialog-window">
+          <div>
+            <div class="column-layout column">
+              <h2 class="title_5">Login</h2>
+              <igx-input-group type="border" class="user-input">
+                <label igxLabel for="inputField">Username</label>
+                <input type="text" name="inputField" [required]="true" [disabled]="false" igxInput />
+              </igx-input-group>
+              <igx-input-group type="border" class="user-input">
+                <label igxLabel for="inputField">Password</label>
+                <input type="password" name="inputField" [required]="true" [disabled]="false" igxInput />
+              </igx-input-group>
+              <a href target="_blank" class="link">Not registered yet?</a>
+              <button igxButton="raised" [disabled]="false" class="user-input">
+                <span>Login</span>
+              </button>
+            </div>
+          </div>
+        </igx-dialog>
       </div>
     </div>
   </div>
